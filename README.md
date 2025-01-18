@@ -1,30 +1,83 @@
-# JavaMineFieldGame
 
-# Mine Field Game is Under Development...
+# Java Mine Field Game 🎮
 
-# Loading...
+**Java Mine Field Game** is a text-based, strategic mine-detection game implemented in Java. This game challenges players to navigate a grid full of hidden mines while avoiding detonations. Successfully uncover all safe spots to win!
 
-Game Rules
+---
 
-- The game is text-based.
-- It should be played over two-dimensional arrays and designed in MineSweeper class. 
-- The user must specify the matrix size, i.e. the number of rows and columns. 
-- A quarter of the number of elements of the array (elementNumber / 4) should be placed randomly. For example, if the array is 4x3 in size, the number of elements should be calculated with the formula (number of rows * number of columns) and the size should be 12. In this case the number of mines should be 12 / 4 = 3 (hint: you can create a second array to hold the positions of these mines). 
- - The user has to select a point on the matrix. Enter row and column values for point selection. 
- - Check if the selected point is within the boundaries of the array and if the condition is not met, request the point again. 
-- If there is a mine at the point entered by the user, the game is lost. 
-- If there are no mines, look at all locations touching the point (right, left, up, down, upper left diagonal, upper right diagonal, lower right diagonal, lower left diagonal) and write the sum of the number of mines around the point. If there are no mines touching the point, the value "0" should be assigned. 
-- The user should win the game if he/she can select all the points without stepping on any mines. 
+## Features
 
-Oyun Kuralları:
+- **Interactive Gameplay:** Fully text-based and runs in the console.
+- **Customizable Grid:** Players can specify the size of the grid at the start.
+- **Random Mine Placement:** Mines are randomly placed based on the grid size.
+- **Dynamic Feedback:** The grid dynamically updates with the number of surrounding mines.
+- **Win or Lose:** Avoid all mines to win, or hit one and lose the game.
 
-- Oyun metin tabanlıdır.
-- Çift boyutlu diziler üzerinden oynanmalı ve MineSweeper sınıfı içerisinde tasarlanmalı. 
-- Matris boyutunu yani satır ve sütun sayısını kullanıcı belirlemeli. 
-- Diziye ait eleman sayısının çeyreği (elemanSayisi / 4) kadar rastgele mayın yerleştirilmeli. Örneğin dizi 4x3 boyutunda - ise eleman sayısı (satırSayısı * sütunSayısı) formülü ile hesaplanmalı ve boyutu 12 olmalı. Bu durumda mayın sayısı 12 / 4 = 3 adet olmalıdır. (ipucu : bu mayınların konumlarını tutacak ikinci bir dizi oluşturabilirsiniz.) 
- - Kullanıcı matris üzerinden bir nokta seçmeli. Nokta seçimi için satır ve sütun değerlerini girmeli. 
- - Seçilen noktanın dizinin sınırları içerisinde olup olmadığını kontrol edilmeli ve koşul sağlanmazsa tekrar nokta istenmeli. 
-- Kullanıcının girdiği noktada mayın var ise oyunu kaybetmeli. 
-- Mayın yok ise, ilgili noktaya değen tüm konumlarına bakılmalı (sağı, solu, yukarısı, aşağısı, sol üst çapraz, sağ üst çapraz, sağ alt çapraz, sol alt çapraz) ve etrafındaki mayınların sayısının toplamı ilgili noktaya yazılmalı. Noktaya değen herhangi bir mayın yok ise "0" değeri atanmalı. 
-- Kullanıcı hiç bir mayına basmadan tüm noktaları seçebilirse oyunu kazanmalı. 
+---
 
+## How to Play
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/cihat-kose/java-mine-field-game.git
+   cd java-mine-field-game
+   ```
+
+2. Compile the game:
+   ```bash
+   javac -d bin ./src/_00_MineFieldGame/*.java
+   ```
+
+3. Run the game:
+   ```bash
+   java -cp bin _00_MineFieldGame.MineField
+   ```
+
+4. Enter the grid size (rows and columns).
+5. Select a cell by entering the row and column indices.
+6. Avoid mines and uncover all safe cells to win!
+
+---
+
+## Game Rules
+
+1. The game runs on a two-dimensional grid.
+2. Players specify the grid size (rows and columns).
+3. Mines are randomly placed (1/4th of total cells).
+4. Select a point by entering row and column numbers.
+5. If the selected point contains a mine, the game ends.
+6. If it's safe, the number of surrounding mines is displayed.
+7. Clear all safe cells to win.
+
+---
+
+## Example Gameplay
+
+```
+Welcome to Mine Field Game!
+Enter grid size (rows x columns): 4 4
+
+Select a cell (row column): 2 3
+Safe! 1 mine(s) nearby.
+
+Select a cell (row column): 1 1
+Oops! You hit a mine. Game Over!
+```
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## Contributors
+
+- **Cihat Köse** – Initial Developer
+
+---
+
+## Project URL
+
+[Java Mine Field Game Repository](https://github.com/cihat-kose/java-mine-field-game.git)
