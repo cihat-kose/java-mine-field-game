@@ -5,6 +5,12 @@
 
 ---
 
+## 🚧 Under Development
+
+This project is currently in the development phase. Features and functionality may change as the game progresses. Contributions and feedback are welcome! If you're interested in contributing, please check the [How to Contribute](#how-to-contribute) section below. 🚀
+
+---
+
 ## Features
 
 - **Interactive Gameplay:** Fully text-based and runs in the console.
@@ -63,6 +69,17 @@ Safe! 1 mine(s) nearby.
 Select a cell (row column): 1 1
 Oops! You hit a mine. Game Over!
 ```
+
+---
+
+## How to Contribute
+
+Contributions are welcome!
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a Pull Request.
 
 ---
 
